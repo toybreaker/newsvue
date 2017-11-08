@@ -1,6 +1,6 @@
 # avue
 
-> A Vue.js project
+> Read [external api](https://newsapi.org/) with Vue.js [project inspired by this post](https://codingthesmartway.com/vue-js-2-vue-resource-real-world-vue-application-with-external-api-access/)
 
 ## Build Setup
 
