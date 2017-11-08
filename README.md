@@ -1,6 +1,6 @@
 # avue
 
-> Read [external api](https://newsapi.org/) with Vue.js [project inspired by this post](https://codingthesmartway.com/vue-js-2-vue-resource-real-world-vue-application-with-external-api-access/)
+> Read [external api](https://newsapi.org/) with Vue.js project inspired by these • [  post](https://codingthesmartway.com/vue-js-2-vue-resource-real-world-vue-application-with-external-api-access/) • [demo](https://vuejsnewslist.codingthesmartway.com/) • [repo](https://github.com/seeschweiler/vuejsnewslist)
 
 ## Build Setup
 
@@ -18,4 +18,4 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+For a detailed explanation on how things work, check out the [webpack docs](http://vuejs-templates.github.io/webpack/) and [vue-loader docs](http://vuejs.github.io/vue-loader).
