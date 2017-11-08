@@ -3,7 +3,6 @@
 
     <SourceSelection v-on:sourceChanged="sourceChanged"></SourceSelection>
     <Newslist v-bind:source="source"></Newslist>
-    <SourceYears v-on:sourceChanged="sourceChanged"></SourceYears>
 
   </div>
 </template>
@@ -31,7 +30,12 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: rgba(22, 22, 22,1);
+  color: white;
+  font-size: 20px!important;
+}
 #app {
- padding-top: 20px;
+  padding-top: 20px;
 }
 </style>

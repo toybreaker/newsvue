@@ -1,7 +1,7 @@
 {
   "name": "avue",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
+  "version": "1.1.0",
+  "description": "suck a json api with Vue.js",
   "author": "toybreaker <rokmabox@gmail.com>",
   "private": true,
   "scripts": {

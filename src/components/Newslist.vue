@@ -48,11 +48,30 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .media-object {
-    width: 128px;
+    width: 100%;
     padding: 10px;
   }
   .media {
     border-top: 1px solid lightgray;
     padding-top: 20px;
+  }
+  .media-body {
+    display: block;
+    width: 100%;
+  }
+  .media-heading {
+    font-size: 40px;
+    line-height: .9;
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 480px) {
+    .media-body {
+      display: table-cell;
+      width: auto;
+    }
+    .media-object {
+      width: 300px;
+    }
   }
 </style>

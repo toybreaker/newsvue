@@ -2,14 +2,17 @@
   <div class="sourceselection">
     <div>
       <div class="jumbotron">
-        <h2><span class="glyphicon glyphicon-list-alt"></span>&nbsp;News List</h2>
+        <h2>
+          <span class="glyphicon glyphicon-list-alt">
+          </span>&nbsp;{{source.name}}
+        </h2>
         <h4>Select News Source</h4>
         <select class="form-control" v-on:change="sourceChanged">
           <option value="">Please select news source ...</option>
           <option v-for="source in sources" v-bind:value="source.id">{{source.name}}</option>
         </select>
         <div v-if="source">
-          <h6>{{source.description}}</h6>
+          <h6 class="source--desc">{{source.description}}</h6>
           <a v-bind:href="source.url" class="btn btn-primary" target="_blank">Go To {{source.name}} Website</a>
         </div>
       </div>
@@ -45,4 +48,15 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.jumbotron {
+  background-color: transparent;
+}
+.jumbotron > * {
+  font-weight: 200;
+}
+.source--desc {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 200;
+}
 </style>
