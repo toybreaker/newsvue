@@ -2,19 +2,23 @@
   <div class="sourceselection">
     <div>
       <div class="jumbotron">
+
         <h2>
-          <span class="glyphicon glyphicon-list-alt">
-          </span>&nbsp;{{source.name}}
+          {{source.name}}
         </h2>
-        <h4>Select News Source</h4>
-        <select class="form-control" v-on:change="sourceChanged">
-          <option value="">Please select news source ...</option>
-          <option v-for="source in sources" v-bind:value="source.id">{{source.name}}</option>
-        </select>
+
         <div v-if="source">
           <h6 class="source--desc">{{source.description}}</h6>
           <a v-bind:href="source.url" class="btn btn-primary" target="_blank">Go To {{source.name}} Website</a>
         </div>
+
+        <h3>Select News Source</h3>
+
+        <select class="form-control" v-on:change="sourceChanged">
+          <option value="">Please select news source ...</option>
+          <option v-for="source in sources" v-bind:value="source.id">{{source.name}}</option>
+        </select>
+
       </div>
     </div>
   </div>
