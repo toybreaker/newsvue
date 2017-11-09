@@ -1,4 +1,6 @@
-# avue
+# vue news
+
+[skinned here](https://news.junglestar.org/)
 
 > Read [external api](https://newsapi.org/) with Vue.js project inspired by these • [  post](https://codingthesmartway.com/vue-js-2-vue-resource-real-world-vue-application-with-external-api-access/) • [demo](https://vuejsnewslist.codingthesmartway.com/) • [repo](https://github.com/seeschweiler/vuejsnewslist)
 
