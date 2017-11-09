@@ -63,4 +63,11 @@ export default {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 200;
 }
+.btn-primary {
+  background-color: transparent;
+  border-color: white;
+}
+.btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
 </style>

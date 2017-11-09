@@ -16,7 +16,7 @@
         </li>
       </ul>
     </div>
-    
+
   </div>
 </template>
 <script>
@@ -48,28 +48,44 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-
-
   .newslist {
     background-color: black;
+    background-color: #0069cc;
   }
+
   .media-object {
     width: 100%;
     padding: 10px;
   }
+
   .media {
-    border-top: 1px solid lightgray;
+    border-top: 1px solid white;
     padding-top: 20px;
   }
+
   .media-body {
     display: block;
     width: 100%;
   }
+
   .media-heading {
     font-size: 40px;
     line-height: .9;
     text-transform: uppercase;
+  }
+
+  .media-heading a {
+    color: rgba(255, 255, 255, .5);
+  }
+
+  .media-heading a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .75);
+  }
+
+  .container {
+    margin-bottom: 50vh;
+    padding-bottom: 10vh;
   }
 
   @media screen and (min-width: 480px) {
