@@ -52,6 +52,10 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.sourceselection {
+  background-color: #0069cc;
+  padding-bottom: 1rem;
+}
 .jumbotron {
   background-color: transparent;
 }
