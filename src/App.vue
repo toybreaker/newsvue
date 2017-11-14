@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <div class="bg"></div>
+    <div class="bg">
+    </div>
+    <a class="by" title="coded by Junglestar, check our services!" target="_blank" href="https://junglestar.org">junglestar.org</a>
     <div class="container">
       <SourceSelection v-on:sourceChanged="sourceChanged"></SourceSelection>
       <Newslist v-bind:source="source"></Newslist>
@@ -45,6 +47,15 @@ body {
 
 #app {
   padding-top: 20px;
+}
+
+.by {
+  position: absolute;
+  bottom: 1.5rem;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+  color: white;
 }
 
 .bg {
