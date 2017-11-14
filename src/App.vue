@@ -2,7 +2,7 @@
   <div id="app">
     <div class="bg">
     </div>
-    <a class="by" title="coded by Junglestar, check our services!" target="_blank" href="https://junglestar.org">junglestar.org</a>
+    <a class="by" title="coded by Junglestar, check our services!" target="_blank" href="https://junglestar.org">Made by junglestar.org</a>
     <div class="container">
       <SourceSelection v-on:sourceChanged="sourceChanged"></SourceSelection>
       <Newslist v-bind:source="source"></Newslist>
@@ -50,12 +50,15 @@ body {
 }
 
 .by {
-  position: absolute;
-  bottom: 1.5rem;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   text-align: center;
+  line-height: 2;
   z-index: 1000;
   color: white;
+  font-weight: 300;
+  background-color: #0069cc;
 }
 
 .bg {

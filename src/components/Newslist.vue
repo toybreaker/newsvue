@@ -10,7 +10,7 @@
           </div>
           <div class="media-body">
             <h4 class="media-heading"><a v-bind:href="article.url" target="_blank">{{article.title}}</a></h4>
-            <h5><i>by {{article.author}}</i></h5>
+            <h5>{{article.publishedAt | moment("dddd, MMMM Do YYYY") }} - <i>by {{article.author}}</i></h5>
             <p>{{article.description}}</p>
           </div>
         </li>
@@ -20,6 +20,8 @@
   </div>
 </template>
 <script>
+
+
 export default {
   name: 'newslist',
   props: ['source'],
@@ -34,6 +36,11 @@ export default {
        .then(response => {
          this.articles = response.data.articles;
        });
+    },
+    convertDate: function () {
+      this.article.publishedAt = new Date()
+      consolelog = d.toUTCString();
+
     }
   },
   created: function () {
@@ -45,6 +52,7 @@ export default {
     }
   }
 }
+
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
