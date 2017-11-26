@@ -11,25 +11,25 @@
 </template>
 
 <script>
-import Newslist from './components/Newslist'
-import SourceSelection from './components/SourceSelection'
-export default {
-  name: 'app',
-  components: {
-    Newslist,
-    SourceSelection
-  },
-  data () {
-    return {
-      source: ""
-    }
-  },
-  methods: {
-    sourceChanged: function (source) {
-      this.source = source;
+  import Newslist from './components/Newslist'
+  import SourceSelection from './components/SourceSelection'
+  export default {
+    name: 'app',
+    components: {
+      Newslist,
+      SourceSelection
+    },
+    data () {
+      return {
+        source: ""
+      }
+    },
+    methods: {
+      sourceChanged: function (source) {
+        this.source = source;
+      }
     }
   }
-}
 </script>
 
 <style>
