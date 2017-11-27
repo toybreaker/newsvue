@@ -59,6 +59,7 @@ export default {
   .newslist {
     background-color: black;
     background-color: #0069cc;
+    margin-bottom: 0;
   }
 
   .media-object {
@@ -93,7 +94,7 @@ export default {
 
   .container {
     margin-bottom: 50vh;
-    padding-bottom: 10vh;
+    /*padding-bottom: 10vh;*/
   }
 
   @media screen and (min-width: 480px) {

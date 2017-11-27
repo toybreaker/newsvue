@@ -75,7 +75,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .bg {
-    height: 30vh;
+    height: 20vh;
   }
 }
 

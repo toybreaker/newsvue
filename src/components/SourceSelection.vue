@@ -19,6 +19,8 @@
           <option v-for="source in sources" v-bind:value="source.id">{{source.name}}</option>
         </select>
 
+        <h1 class="huge">Branded News Browser</h1>
+
       </div>
     </div>
   </div>
@@ -54,10 +56,11 @@ export default {
 <style scoped>
 .sourceselection {
   background-color: #0069cc;
-  padding-bottom: 1rem;
+  /*padding-bottom: 1rem;*/
 }
 .jumbotron {
   background-color: transparent;
+  padding-bottom: 0;
 }
 .jumbotron > * {
   font-weight: 200;
@@ -73,5 +76,22 @@ export default {
 }
 .btn-primary:hover {
   background-color: rgba(255, 255, 255, 0.15);
+}
+.huge {
+  font-size: 18vw;
+  font-weight: 100;
+  line-height: .75;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 601px) {
+  .huge {
+    font-size: 14vw;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .huge {
+    font-size: 9vw;
+  }
 }
 </style>
