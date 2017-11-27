@@ -10,7 +10,9 @@
           </div>
           <div class="media-body">
             <h4 class="media-heading"><a v-bind:href="article.url" target="_blank">{{article.title}}</a></h4>
-            <h5>{{article.publishedAt | moment("dddd, Do MMMM YYYY") }} - <i>by {{article.author}}</i></h5>
+            <!-- <h5>{{article.publishedAt | moment("dddd, Do MMMM YYYY") }} - <i>by {{article.author}}</i></h5> -->
+            <h5>{{article.publishedAt | moment("from") }} - <i>by {{article.author}}</i></h5>
+
             <p>{{article.description}}</p>
           </div>
         </li>
