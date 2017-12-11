@@ -17,6 +17,14 @@
           </div>
         </li>
       </ul>
+
+      <a class="totop" href="#top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 8l-6 6 1.41 1.41 4.59-4.58 4.59 4.58 1.41-1.41z" fill="white"/>
+            <path d="M0 0h24v24h-24z" fill="none"/>
+        </svg>
+      </a>
+
     </div>
 
   </div>
@@ -98,6 +106,27 @@ export default {
     margin-bottom: 50vh;
     /*padding-bottom: 10vh;*/
   }
+
+
+  .totop {
+    user-select: none;
+    z-index: 1001;
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+  }
+  .totop svg {
+    border: 2px white solid;
+    position: absolute;
+    top: 80vh;
+    margin-bottom: 50vh;
+    height: 50px;
+    left: calc(50% - 38px);
+  }
+
 
   @media screen and (min-width: 480px) {
     .media-body {
