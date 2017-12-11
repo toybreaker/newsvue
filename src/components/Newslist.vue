@@ -1,6 +1,6 @@
 <template>
   <div class="newslist">
-    <div class="container">
+
       <ul class="media-list">
         <li class="media" v-for="article in articles">
           <div class="media-left">
@@ -26,12 +26,9 @@
       </a>
 
     </div>
-
-  </div>
 </template>
+
 <script>
-
-
 export default {
   name: 'newslist',
   props: ['source'],
@@ -117,14 +114,14 @@ export default {
     width: 100%;
     cursor: pointer;
     text-align: center;
+    margin-bottom: 55vh;
+    padding-top: 60vh;
   }
   .totop svg {
     border: 2px white solid;
     position: absolute;
-    top: 80vh;
-    margin-bottom: 50vh;
+    margin-left: -25px;
     height: 50px;
-    left: calc(50% - 38px);
   }
 
 
