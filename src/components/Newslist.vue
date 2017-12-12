@@ -71,7 +71,7 @@ export default {
 
   .media-object {
     width: 100%;
-    padding: 10px;
+    padding-bottom: 10px;
   }
 
   .media {
@@ -85,7 +85,7 @@ export default {
   }
 
   .media-heading {
-    font-size: 40px;
+    font-size: 30px;
     line-height: .9;
     text-transform: uppercase;
   }
@@ -121,6 +121,7 @@ export default {
     border: 2px white solid;
     position: absolute;
     margin-left: -25px;
+    margin-top: -60px;
     height: 50px;
   }
 
@@ -132,6 +133,9 @@ export default {
     }
     .media-object {
       width: 300px;
+    }
+    .media-heading {
+      font-size: 40px;
     }
   }
 </style>
