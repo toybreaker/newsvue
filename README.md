@@ -24,5 +24,5 @@ For a detailed explanation on how things work, check out the [webpack docs](http
 
 ### Enhancements
 
-- added author cos you gotta know who's writing...
+- added author cos you gotta know who's writing, can't just trust any trumpet barking...
 - added date and displayed it right with [vue-moment](https://github.com/brockpetrie/vue-moment)

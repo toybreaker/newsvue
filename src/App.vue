@@ -1,14 +1,23 @@
 <template>
   <div id="app">
+
     <div id="top"></div>
-    <div class="bg">
+
+    <div class="bg"></div>
+
+    <div class="by">
+
+      <a title="coded by Junglestar, check our services!" target="_blank" href="https://junglestar.org">made by junglestar.org</a> +
+
+      <a target="_blank" href="https://newsapi.org">powered by newsapi.org</a>
+
     </div>
 
-    <a class="by" title="coded by Junglestar, check our services!" target="_blank" href="https://junglestar.org">Made by junglestar.org</a>
     <div class="container">
       <SourceSelection v-on:sourceChanged="sourceChanged"></SourceSelection>
       <Newslist v-bind:source="source"></Newslist>
     </div>
+
   </div>
 </template>
 
@@ -63,7 +72,11 @@ body {
   background-color: #0069cc;
   font-size: 3vw;
 }
-.by:hover {
+.by a {
+  color: white;
+}
+
+.by a:hover {
   color: rgba(255,255,255,.75);
   text-decoration: none;
 }
